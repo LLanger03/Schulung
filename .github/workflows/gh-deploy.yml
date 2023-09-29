@@ -1,4 +1,4 @@
-00 name: gh-deploy 
+name: gh-deploy 
  on:
    push:
      branches:
@@ -11,5 +11,5 @@
       - uses: actions/setup-python@v2
          with:
            python-version: 3.x
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material python-markdown-math
       - run: mkdocs gh-deploy --force
